@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team AsuraVerse Esports Pvt Ltd</title>
+  <title>Team AsuraVerse Esports</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
@@ -771,66 +771,94 @@
     }
 
     .achieve-item {
-      background: var(--bg2);
-      padding: 36px 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
       position: relative;
-      overflow: hidden;
-      transition: background 0.2s;
+      background: var(--primary);
+      clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+      padding: 1px;
+      height: 340px;
+      transition: transform 0.3s;
     }
 
     .achieve-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .achieve-inner {
+      background: #0a0a0a;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .achieve-inner:hover {
       background: #111;
     }
 
-    .achieve-item::before {
-      content: '';
+    .achieve-arrow {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 3px;
-      height: 0;
-      background: var(--primary);
-      transition: height 0.3s;
-    }
-
-    .achieve-item:hover::before {
-      height: 100%;
-    }
-
-    .achieve-medal {
-      font-size: 28px;
-    }
-
-    .achieve-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 20px;
-      letter-spacing: 1.5px;
+      top: 24px;
+      right: 24px;
       color: #fff;
-      line-height: 1.2;
+      opacity: 0.7;
     }
 
-    .achieve-event {
-      font-size: 13px;
-      color: var(--muted2);
+    .achieve-logo {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
-    .achieve-prize {
+    .achieve-logo-text {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 30px;
-      color: var(--primary);
-      letter-spacing: 2px;
-      margin-top: auto;
-      padding-top: 8px;
+      font-size: 32px;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: 1px;
     }
 
-    .achieve-year {
+    .achieve-logo-sub {
       font-family: 'Space Mono', monospace;
       font-size: 10px;
-      color: var(--muted);
+      color: var(--primary);
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+
+    .achieve-bottom {
+      margin-top: auto;
+    }
+
+    .achieve-tag {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-family: 'Space Mono', monospace;
+      color: #ccc;
+      margin-bottom: 4px;
+    }
+
+    .achieve-tag-color {
+      width: 10px;
+      height: 14px;
+      background: var(--primary);
+    }
+
+    .achieve-result {
+      font-size: 20px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      color: #fff;
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     /* ─── SPONSORS ─── */
@@ -1587,7 +1615,7 @@
       </div>
       <div class="logo-text">
         <div class="org">ASURA<span>VERSE</span></div>
-        <div class="sub">Esports Pvt Ltd</div>
+        <div class="sub">Esports</div>
       </div>
     </a>
     <ul class="nav-links">
@@ -1686,14 +1714,14 @@
       <div class="ticker-item">&#9733; NOW RECRUITING ESPORTS ROSTERS &#9733;</div>
       <div class="ticker-item">Dominate. Conquer. Ascend.</div>
       <div class="ticker-item">Gandhinagar · Gujarat · India</div>
-      <div class="ticker-item">AsuraVerse Esports Pvt Ltd</div>
+      <div class="ticker-item">AsuraVerse Esports</div>
       <!-- Duplicate for seamless loop -->
       <div class="ticker-item">Team AsuraVerse Esports</div>
       <div class="ticker-item">BGMI · Valorant · Free Fire · COD Mobile</div>
       <div class="ticker-item">&#9733; NOW RECRUITING ESPORTS ROSTERS &#9733;</div>
       <div class="ticker-item">Dominate. Conquer. Ascend.</div>
       <div class="ticker-item">Gandhinagar · Gujarat · India</div>
-      <div class="ticker-item">AsuraVerse Esports Pvt Ltd</div>
+      <div class="ticker-item">AsuraVerse Esports</div>
     </div>
   </div>
 
@@ -1708,7 +1736,7 @@
         <h2 class="section-title">Built for the Undergods.<br><span style="color: var(--primary);">Driven by the
             Rise.</span></h2>
         <p class="section-desc" style="margin-bottom:24px;">
-          At Team AsuraVerse Esports Pvt Ltd, our vision is clear — to become the ultimate launchpad for India’s
+          At Team AsuraVerse Esports, our vision is clear — to become the ultimate launchpad for India’s
           undergods — the raw, overlooked, and underestimated players and creators who possess the hunger to rise but
           lack the right opportunities.
         </p>
@@ -1770,19 +1798,19 @@
         <div class="game-tile-icon"><img src="bgmi.jpg" alt="BGMI"
             style="width:64px;height:64px;object-fit:contain;border-radius:12px;"></div>
         <div class="game-tile-name">BGMI</div>
-        <div class="game-badge-active">Active</div>
+        <div class="game-badge-soon">Coming Soon</div>
       </div>
       <div class="game-tile">
         <div class="game-tile-icon"><img src="freefire.jpg" alt="Free Fire"
             style="width:64px;height:64px;object-fit:contain;border-radius:12px;"></div>
         <div class="game-tile-name">Free Fire</div>
-        <div class="game-badge-active">Active</div>
+        <div class="game-badge-soon">Coming Soon</div>
       </div>
       <div class="game-tile">
         <div class="game-tile-icon"><img src="valorant.jpg" alt="Valorant"
             style="width:64px;height:64px;object-fit:contain;border-radius:12px;"></div>
         <div class="game-tile-name">Valorant</div>
-        <div class="game-badge-active">Active</div>
+        <div class="game-badge-soon">Coming Soon</div>
       </div>
       <div class="game-tile">
         <div class="game-tile-icon"><img src="codm.jpg" alt="COD Mobile"
@@ -1803,120 +1831,107 @@
   <section id="roster">
     <div class="section-label">
       <div class="section-label-line"></div>
-      <div class="section-label-tag">Our Athletes</div>
+      <div class="section-label-tag">Roster Status</div>
     </div>
-    <h2 class="section-title">The Roster</h2>
-    <div class="roster-tabs">
-      <div class="rtab active">BGMI</div>
-      <div class="rtab">Free Fire</div>
-      <div class="rtab">Valorant</div>
-    </div>
-    <div class="roster-grid">
-      <div class="player-card">
-        <div class="player-card-top">
-          <div class="player-avatar" style="overflow: hidden;"><img src="Blaze.jpeg" alt="BLAZE"
-              style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
-        </div>
-        <div class="player-info">
-          <div class="player-ign">BLAZE</div>
-          <div class="player-real">Niket Verma</div>
-          <div class="player-game">BGMI</div>
-        </div>
+    <h2 class="section-title">Competitive <span>Lineup</span></h2>
+    
+    <div style="background: var(--bg3); border: 1px solid var(--border-primary); padding: 56px 40px; text-align: center; max-width: 880px; margin: 32px auto 0; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--primary);"></div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: var(--primary); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px;">
+        // Season Update
       </div>
-      <div class="player-card">
-        <div class="player-card-top">
-          <div class="player-avatar" style="overflow: hidden;"><img src="Frozen.jpeg" alt="FROZEN"
-              style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
-        </div>
-        <div class="player-info">
-          <div class="player-ign">FROZEN</div>
-          <div class="player-real">Aryan Singh</div>
-          <div class="player-game">BGMI</div>
-        </div>
+      <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(34px, 5vw, 52px); letter-spacing: 2px; color: #fff; margin-bottom: 16px; line-height: 1;">
+        No Active Roster <span style="color: var(--primary);">Right Now</span>
+      </h3>
+      <p style="color: var(--muted2); font-size: 16px; line-height: 1.8; max-width: 620px; margin: 0 auto 32px;">
+        Team AsuraVerse is currently restructuring its competitive lineup. We have no active roster at the moment as we scout the next generation of Tier-1 athletes and expand into organising tournaments &amp; scrims across India.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <button class="btn-primary" onclick="window.location.href='roster-application.html';">Apply for Next Roster</button>
+        <button class="btn-ghost" onclick="window.location.href='players.html';">View Past Legacy Roster</button>
       </div>
-      <div class="player-card">
-        <div class="player-card-top">
-          <div class="player-avatar" style="overflow: hidden;"><img src="snipy.jpeg" alt="SNIPY"
-              style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
-        </div>
-        <div class="player-info">
-          <div class="player-ign">SNIPY</div>
-          <div class="player-real">Nikhil Chaudhary</div>
-          <div class="player-game">BGMI</div>
-        </div>
-      </div>
-      <div class="player-card">
-        <div class="player-card-top">
-          <div class="player-avatar" style="overflow: hidden;"><img src="Thug.jpeg" alt="THUG"
-              style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
-        </div>
-        <div class="player-info">
-          <div class="player-ign">THUG</div>
-          <div class="player-real">Abhay Kumar</div>
-          <div class="player-game">BGMI</div>
-        </div>
-      </div>
-      <div class="player-card">
-        <div class="player-card-top">
-          <div class="player-avatar" style="overflow: hidden;"><img src="vikki.jpeg" alt="VIKKI"
-              style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></div>
-        </div>
-        <div class="player-info">
-          <div class="player-ign">VIKKI</div>
-          <div class="player-real">Sunder Singh</div>
-          <div class="player-game">BGMI</div>
-        </div>
-      </div>
-    </div>
-    <div style="margin-top: 48px; text-align: center;">
-      <button class="btn-primary" onclick="window.location.href='players.html';">View Full BGMI Roster</button>
     </div>
   </section>
 
   <!-- ─── ACHIEVEMENTS ─── -->
   <section id="achievements" style="padding: 80px 48px; background: var(--bg);">
-    <div class="section-label">
-      <div class="section-label-line"></div>
-      <div class="section-label-tag">Trophy Cabinet</div>
+    <div class="section-label" style="justify-content: center; margin-bottom: 12px;">
+      <div class="section-label-tag" style="color: var(--primary);">Latest Achievements</div>
     </div>
-    <h2 class="section-title">Recent <span>Achievements</span></h2>
+    <h2 class="section-title" style="text-align: center; font-size: 42px; margin-bottom: 60px;">
+      PROVING EXCELLENCE <br><span style="color: #fff;">THROUGH RESULTS</span>
+    </h2>
     <div
-      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px;">
+      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1300px; margin: 0 auto;">
 
-      <div class="achieve-item">
-        <div class="achieve-event">Weekly Showdown</div>
-        <div class="achieve-title">BY INCUBETA'S FLUX</div>
-        <div class="achieve-prize">CHAMPIONS</div>
+      <!-- Card 1: Bihar State Open -->
+      <div class="achieve-item" onclick="window.location.href='achievement.html?id=bihar-lan';" style="cursor: pointer;">
+        <div class="achieve-inner">
+          <svg class="achieve-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          <div class="achieve-logo" style="width: 100%; padding: 0 16px;">
+            <img src="Bihar esports open chapionship logo.png" alt="Bihar State Open Logo" style="width: 100%; height: 100%; max-height: 200px; object-fit: contain;">
+          </div>
+          <div class="achieve-bottom">
+            <div class="achieve-tag">
+              <div class="achieve-tag-color"></div>
+              BGMI
+            </div>
+            <div class="achieve-result">#4 Quarter Finals</div>
+          </div>
+        </div>
       </div>
 
-      <div class="achieve-item">
-        <div class="achieve-event">Rising Showdown S2</div>
-        <div class="achieve-title">BY RAKA ESPORTS</div>
-        <div class="achieve-prize">GRAND FINALIST</div>
+      <!-- Card 2: Trident Ignite -->
+      <div class="achieve-item" onclick="window.location.href='achievement.html?id=trident-ignite';" style="cursor: pointer;">
+        <div class="achieve-inner">
+          <svg class="achieve-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          <div class="achieve-logo" style="width: 100%; padding: 0 16px;">
+            <img src="trident-ignite.jpg" alt="Trident Ignite 2026: Road to Masters" style="width: 100%; height: 100%; max-height: 200px; object-fit: cover; object-position: center 22%; border-radius: 4px;">
+          </div>
+          <div class="achieve-bottom">
+            <div class="achieve-tag">
+              <div class="achieve-tag-color"></div>
+              BGMI
+            </div>
+            <div class="achieve-result">#6 Round 2</div>
+          </div>
+        </div>
       </div>
 
-      <div class="achieve-item">
-        <div class="achieve-event">Lonavala Diwali LAN</div>
-        <div class="achieve-title">BY BLESSED VIBES</div>
-        <div class="achieve-prize">SEMI FINALIST</div>
+      <!-- Card 3: Tortuga T1 -->
+      <div class="achieve-item" onclick="window.location.href='achievement.html?id=tortuga-scrims';" style="cursor: pointer;">
+        <div class="achieve-inner">
+          <svg class="achieve-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          <div class="achieve-logo">
+            <div class="achieve-logo-text">TORTUGA T1</div>
+            <div class="achieve-logo-sub">QUALIFIERS</div>
+          </div>
+          <div class="achieve-bottom">
+            <div class="achieve-tag">
+              <div class="achieve-tag-color"></div>
+              BGMI
+            </div>
+            <div class="achieve-result">#1 Overall</div>
+          </div>
+        </div>
       </div>
 
-      <div class="achieve-item">
-        <div class="achieve-event">The Marvels Tournament</div>
-        <div class="achieve-title">BY COLDX ORGANISATION</div>
-        <div class="achieve-prize">GRAND FINALIST</div>
-      </div>
-
-      <div class="achieve-item">
-        <div class="achieve-event">ARENA OF CHAMPIONS</div>
-        <div class="achieve-title">BY TRB ESPORTS</div>
-        <div class="achieve-prize">GRAND FINALIST</div>
-      </div>
-
-      <div class="achieve-item">
-        <div class="achieve-event">MASTER SERIES</div>
-        <div class="achieve-title">BY NEXT LEVEL ESPORTS</div>
-        <div class="achieve-prize">GRAND FINALIST</div>
+      <!-- Card 4: 7K Grand Finals -->
+      <div class="achieve-item" onclick="window.location.href='achievement.html?id=7k';" style="cursor: pointer;">
+        <div class="achieve-inner">
+          <svg class="achieve-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          <div class="achieve-logo">
+            <div class="achieve-logo-text">7K GRAND FINALS</div>
+            <div class="achieve-logo-sub">16-18 TEAMS FIX</div>
+          </div>
+          <div class="achieve-bottom">
+            <div class="achieve-tag">
+              <div class="achieve-tag-color"></div>
+              BGMI
+            </div>
+            <div class="achieve-result">#6 Placement</div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -2126,7 +2141,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand">ASURA<span>VERSE</span></div>
-        <p class="footer-tagline">Team AsuraVerse Esports Pvt Ltd<br>Gandhinagar, Gujarat, India</p>
+        <p class="footer-tagline">Team AsuraVerse Esports<br>Gandhinagar, Gujarat, India</p>
       </div>
       <div class="footer-col">
         <div class="footer-col-title">Organisation</div>
@@ -2151,7 +2166,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2025 Team AsuraVerse Esports Pvt Ltd. All Rights Reserved.</div>
+      <div class="footer-copy">© 2025 Team AsuraVerse Esports All Rights Reserved.</div>
       <div class="socials">
         <button class="social-btn" onclick="document.getElementById('contact').scrollIntoView();" title="YouTube">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
