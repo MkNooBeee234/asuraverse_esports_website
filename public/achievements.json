@@ -1,5 +1,25 @@
 [
   {
+    "id": "trident-ignite",
+    "name": "Trident Ignite 2026 : Road to Masters",
+    "prize_pool": "15,00,000 INR",
+    "final_standing": "#6 in Round 2",
+    "logo": "trident-ignite.jpg",
+    "game": "BGMI",
+    "journey": [
+      {
+        "round": "Round 1 (Group 44)",
+        "result": "#3 Finish · Qualified (99 Pts · 2 WWCD)",
+        "image": "trident-round1-group44.jpg"
+      },
+      {
+        "round": "Round 2 (Group 10)",
+        "result": "#6 Finish (52 Pts)",
+        "image": "trident-round2-group10.jpg"
+      }
+    ]
+  },
+  {
     "id": "bihar-lan",
     "name": "Bihar State Open Esports Championship",
     "prize_pool": "5,75,000 INR",

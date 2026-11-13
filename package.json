@@ -8,6 +8,7 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
@@ -15,6 +16,7 @@
     "nodemailer": "^8.0.5"
   },
   "devDependencies": {
+    "marked": "^18.0.3",
     "nodemon": "^3.1.4"
   },
   "engines": {

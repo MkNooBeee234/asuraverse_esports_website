@@ -1,141 +1,36 @@
-# AsuraVerse Esports Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Full-stack website for **Team AsuraVerse Esports Pvt Ltd** — featuring contact, partnership inquiry, and player roster application forms powered by Express.js and Nodemailer.
+## Getting Started
 
----
+First, run the development server:
 
-## Features
-
-- 🏠 Main landing page (`asuraverse_website.html`)
-- 📬 Contact Us form with Nodemailer email delivery
-- 🤝 Partner With Us page (`/partner-with-us`) with partnership inquiry form
-- 🎮 Roster Application page (`/roster-application`) with player tryout form
-- ✉️ Confirmation emails sent to both admin and the submitting user
-- 📱 Fully responsive, matches the existing dark esports theme
-
----
-
-## Tech Stack
-
-- **Frontend**: HTML5, CSS3, Vanilla JS
-- **Backend**: Node.js, Express.js
-- **Email**: Nodemailer (Gmail SMTP)
-- **Config**: dotenv
-
----
-
-## Setup
-
-### 1. Prerequisites
-
-- Node.js ≥ 18
-- A Gmail account with [2-Step Verification](https://myaccount.google.com/security) enabled
-
-### 2. Clone and install
-
-```bash
-git clone https://github.com/Mukund234/asuraverse_esports_website.git
-cd asuraverse_esports_website
-npm install
-```
-
-### 3. Configure environment variables
-
-```bash
-cp .env.example .env
-```
-
-Open `.env` and fill in your credentials:
-
-```env
-PORT=3000
-
-# Gmail address used to SEND emails
-EMAIL_USER=your_gmail@gmail.com
-
-# Gmail App Password (NOT your account password)
-# Generate one at: https://myaccount.google.com/apppasswords
-EMAIL_PASS=your_16_char_app_password
-
-# Address that receives all form notifications
-ADMIN_EMAIL=teamasuraverse@gmail.com
-```
-
-> **Note:** Never commit your `.env` file. It is already listed in `.gitignore`.
-
-### 4. Run the server
-
-**Development** (auto-restarts on file changes):
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-**Production**:
-```bash
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The site will be available at **http://localhost:3000**.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Pages & API Routes
+## Learn More
 
-| URL | Description |
-|---|---|
-| `/` | Main landing page |
-| `/partner-with-us` | Partnership inquiry page |
-| `/roster-application` | Player roster application page |
-| `POST /api/contact` | Contact form submission |
-| `POST /api/partnership` | Partnership inquiry submission |
-| `POST /api/roster` | Roster application submission |
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Project Structure
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-```
-├── server.js                  # Express backend
-├── package.json               # Node dependencies
-├── .env.example               # Environment variables template
-├── .gitignore
-├── asuraverse_website.html    # Main landing page
-├── partner-with-us.html       # Partnership page
-├── roster-application.html    # Roster application page
-├── routes/
-│   ├── contact.js             # Contact form handler
-│   ├── partnership.js         # Partnership inquiry handler
-│   └── roster.js              # Roster application handler
-├── utils/
-│   └── mailer.js              # Nodemailer transporter factory
-└── README.md
-```
+## Deploy on Vercel
 
----
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Gmail App Password
-
-1. Go to [Google Account → Security](https://myaccount.google.com/security)
-2. Enable **2-Step Verification** if not already enabled
-3. Search for **App Passwords** and create one for "Mail"
-4. Copy the 16-character password into `EMAIL_PASS` in your `.env` file
-
----
-
-## Security
-
-- **Never commit `.env`** — it contains credentials and is excluded via `.gitignore`.
-- **Never share App Passwords** in code, comments, chat, or public issues.
-- If a credential is accidentally exposed, **revoke it immediately** at [Google App Passwords](https://myaccount.google.com/apppasswords) and generate a new one.
-- To audit whether `.env` was ever committed by mistake, run:
-  ```bash
-  git log --all --full-history -- .env
-  ```
-  If any commits appear, remove the file from history using `git filter-repo` or [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/).
-- Contributors should use their **own** Gmail account and App Password for local development — never share or reuse production credentials.
-
----
-
-## License
-
-MIT — © 2025 Team AsuraVerse Esports Pvt Ltd
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
