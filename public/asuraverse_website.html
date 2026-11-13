@@ -4,7 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team AsuraVerse Esports</title>
+  <title>AsuraVerse Esports | Indian Esports Organization</title>
+  <meta name="description" content="AsuraVerse Esports is an Indian esports organization focused on competitive gaming, BGMI tournaments, content creation and esports talent development.">
+  <meta name="keywords" content="AsuraVerse, AsuraVerse Esports, Indian Esports, BGMI Esports, Esports Team India, Competitive Gaming India, BGMI Tournament, Esports Organization India">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="AsuraVerse Esports">
+  <link rel="canonical" href="https://asuraverse.in/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asuraverse.in/">
+  <meta property="og:title" content="AsuraVerse Esports | Indian Esports Organization">
+  <meta property="og:description" content="AsuraVerse Esports is an Indian esports organization focused on competitive gaming, BGMI tournaments, content creation and esports talent development.">
+  <meta property="og:image" content="https://asuraverse.in/asuraverse logo.jpg">
+  <meta property="og:site_name" content="AsuraVerse Esports">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AsuraVerse Esports | Indian Esports Organization">
+  <meta name="twitter:description" content="AsuraVerse Esports is an Indian esports organization focused on competitive gaming, BGMI tournaments, content creation and esports talent development.">
+  <meta name="twitter:image" content="https://asuraverse.in/asuraverse logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="/asuraverse logo.jpg">
+  <link rel="apple-touch-icon" href="/asuraverse logo.jpg">
+
+  <!-- Sitemap reference -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- ── Schema.org JSON-LD Structured Data ── -->
+  <!-- Tells Google, ChatGPT, Perplexity, Gemini exactly what this site is -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SportsOrganization",
+        "@id": "https://asuraverse.in/#organization",
+        "name": "AsuraVerse Esports",
+        "alternateName": "Team AsuraVerse",
+        "legalName": "AsuraVerse Esports",
+        "url": "https://asuraverse.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://asuraverse.in/asuraverse logo.jpg",
+          "width": 512,
+          "height": 512
+        },
+        "description": "AsuraVerse Esports is an Indian esports organization focused on competitive BGMI gaming, talent development, content creation and long-term esports ecosystem growth.",
+        "sport": "Esports",
+        "foundingDate": "2024",
+        "location": {
+          "@type": "Place",
+          "name": "Gandhinagar, Gujarat, India",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gandhinagar",
+            "addressRegion": "Gujarat",
+            "addressCountry": "IN"
+          }
+        },
+        "sameAs": [
+          "https://www.instagram.com/teamasuraverse/",
+          "https://www.youtube.com/@TeamAsuraVerse",
+          "https://x.com/asuraversegg",
+          "https://www.linkedin.com/company/asuraverse-esports",
+          "https://www.facebook.com/asuraverseesports"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "partnerships",
+          "url": "https://asuraverse.in/partner-with-us"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://asuraverse.in/#website",
+        "url": "https://asuraverse.in",
+        "name": "AsuraVerse Esports",
+        "description": "Official website of AsuraVerse Esports — Indian competitive BGMI esports organization.",
+        "publisher": { "@id": "https://asuraverse.in/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://asuraverse.in/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://asuraverse.in/#webpage",
+        "url": "https://asuraverse.in",
+        "name": "AsuraVerse Esports | Indian Esports Organization",
+        "isPartOf": { "@id": "https://asuraverse.in/#website" },
+        "about": { "@id": "https://asuraverse.in/#organization" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://asuraverse.in/asuraverse logo.jpg"
+        }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
@@ -2018,7 +2121,8 @@
       <div class="section-label-tag">Latest Updates</div>
     </div>
     <h2 class="section-title">News &amp; Media</h2>
-    <div class="news-grid" style="grid-template-columns: 1fr;">
+    <div class="news-grid" style="grid-template-columns: 1fr 1fr;">
+      <!-- Card 1: Recruitment -->
       <div class="news-card">
         <div class="news-thumb">
           <div class="news-thumb-overlay"></div>
@@ -2036,6 +2140,27 @@
             Competitive Esports Rosters</div>
           <div class="news-date" style="font-size: 14px; margin-top: 12px; font-weight: bold; color: var(--primary);">
             ACTIVE RECRUITMENT • ACCEPTING APPLICATIONS NOW</div>
+        </div>
+      </div>
+
+      <!-- Card 2: Partnerships & Sponsors -->
+      <div class="news-card" onclick="window.location.href='partner-with-us.html';" style="cursor: pointer;">
+        <div class="news-thumb">
+          <div class="news-thumb-overlay"></div>
+          <div class="news-thumb-icon">
+            <!-- Icon: Handshake / Briefcase / Dollar sign -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="opacity:0.8; color:var(--primary);">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="news-body" style="padding: 40px; text-align: center;">
+          <div class="news-tag" style="justify-content: center; margin-bottom: 16px;">Partnerships</div>
+          <div class="news-title" style="font-size: 24px; color: #fff;">Team AsuraVerse is actively looking for
+            Partners and Sponsors in a professional way</div>
+          <div class="news-date" style="font-size: 14px; margin-top: 12px; font-weight: bold; color: var(--primary);">
+            GROW WITH US • OPEN FOR INVESTMENT</div>
         </div>
       </div>
     </div>
@@ -2160,15 +2285,16 @@
       <div class="footer-col">
         <div class="footer-col-title">Connect</div>
         <a href="https://www.instagram.com/teamasuraverse/" target="_blank">Instagram</a>
-        <a href="#contact">YouTube</a>
-        <a href="#contact">Twitter / X</a>
-        <a href="#contact">Discord</a>
+        <a href="https://www.youtube.com/@TeamAsuraVerse" target="_blank">YouTube</a>
+        <a href="https://x.com/asuraversegg" target="_blank">Twitter / X</a>
+        <a href="https://www.linkedin.com/company/asuraverse-esports" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/asuraverseesports" target="_blank">Facebook</a>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-copy">© 2025 Team AsuraVerse Esports All Rights Reserved.</div>
       <div class="socials">
-        <button class="social-btn" onclick="document.getElementById('contact').scrollIntoView();" title="YouTube">
+        <button class="social-btn" onclick="window.open('https://www.youtube.com/@TeamAsuraVerse', '_blank');" title="YouTube">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29.01 29.01 0 0 0 1 11.75a29.01 29.01 0 0 0 .46 5.33c.25.96.99 1.7 1.94 1.95 1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.95 29.01 29.01 0 0 0 .46-5.33 29.01 29.01 0 0 0-.46-5.33zM9.75 15.02V8.48L15.5 11.75l-5.75 3.27z" />
@@ -2183,10 +2309,19 @@
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
           </svg>
         </button>
-        <button class="social-btn" onclick="document.getElementById('contact').scrollIntoView();" title="Twitter / X">
+        <button class="social-btn" onclick="window.open('https://x.com/asuraversegg', '_blank');" title="Twitter / X">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </button>
+        <button class="social-btn" onclick="window.open('https://www.linkedin.com/company/asuraverse-esports', '_blank');" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+        </button>
+        <button class="social-btn" onclick="window.open('https://www.facebook.com/asuraverseesports', '_blank');" title="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
           </svg>
         </button>
         <button class="social-btn" onclick="document.getElementById('contact').scrollIntoView();" title="Discord">
