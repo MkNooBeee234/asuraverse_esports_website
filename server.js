@@ -108,30 +108,6 @@ app.get('/roster-poster', (req, res) => {
   res.sendFile(path.join(publicDir, 'roster-poster.html'));
 });
 
-app.get('/gallery', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'gallery.html'));
-});
-
-app.get('/founder', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'founder.html'));
-});
-
-app.get('/roster-poster', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'roster-poster.html'));
-});
-
-app.get('/achievement', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'achievement.html'));
-});
-
-app.get('/player', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'player.html'));
-});
-
-app.get('/opportunities', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'opportunities.html'));
-});
-
 // ── 404 handler ───────────────────────────────────────────────────────────────
 app.use((req, res) => {
   res.status(404).sendFile(path.join(publicDir, 'asuraverse_website.html'));
